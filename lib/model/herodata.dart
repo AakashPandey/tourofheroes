@@ -34,7 +34,7 @@ class HeroList extends StatesRebuilder {
     rebuildStates();
   }
 
-  editHero(String oh, nh) {
+  editHero(String oh, String nh) {
     List names = this.allHeroes.map((n) => n.name).toList();
     int i = names.indexOf(oh);
     if (i != -1) {
@@ -48,7 +48,7 @@ class HeroList extends StatesRebuilder {
     }
   }
 
-  searchHero(h) {
+  searchHero(String h) {
     List res = [];
 
     this.names.forEach((n) {
